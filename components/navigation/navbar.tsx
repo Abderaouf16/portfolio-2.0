@@ -8,7 +8,7 @@ function Navbar() {
   const [activeLink, setActiveLink] = useState("aboutMe");
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleSetActive = (link) => {
+  const handleSetActive = (link: string) => {
     setActiveLink(link);
   };
 

@@ -1,10 +1,10 @@
 import githubIcon from "@/public/assets/icons/github.svg";
 import linkedinIcon from "@/public/assets/icons/linkedin.svg";
-import cv from "@/public/assets/CV/khamoum_abderraouf_cv.pdf";
 import abdou from "@/public/assets/images/Abdou.jpg";
 import Image from "next/image";
 
 function AboutMe() {
+  const cv = '/assets/CV/cv.pdf'
   return (
     <>
       <section id="aboutMe" className=" w-full pt-2 ">
@@ -58,6 +58,7 @@ function AboutMe() {
               </div>
               <div className="  w-full  h-auto">
                 <a
+                href={cv}
                   download="Khamoum Abderraouf CV"
                   className=" inline-block px-5 py-3 last:py-3 md:px-8 md:py-3  font-light md:font-normal bg-gray-700 border-2 border-gray-700  text-gray-50 text-xs rounded-md  "
                 >

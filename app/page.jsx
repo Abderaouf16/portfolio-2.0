@@ -1,13 +1,13 @@
 'use client'
 import { useEffect, useLayoutEffect, useState } from "react";
 import "tailwindcss/tailwind.css";
-import feather from "feather-icons";
 import nameLogo from "@/public/assets/nameLogo/nameLogo.svg";
 import { annotate, annotationGroup } from "rough-notation";
 import coryRightIcon from "@/public/assets/icons/copyright.svg";
 import bars from '@/public/assets/icons/bars-solid.svg';
 import { Element } from "react-scroll";
 import { Link } from "react-scroll";
+import feather from "feather-icons";
 
 import Education from "@/components/education/education";
 import Skills from "@/components/skills/skills";
