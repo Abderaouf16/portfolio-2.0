@@ -9,9 +9,9 @@ function AboutMe() {
     <>
       <section id="aboutMe" className=" w-full pt-2 ">
         <div className=" max-w-screen-xl mx-auto   px-4 lg:px-0 my-32  ">
-          <div className=" flex  font-rubik  ">
-            <div className="flex-1 md:mr-20   mr-6">
-              <h6 className=" font-rubik font-bold text-gray-600 text-2xl  lg:text-3xl ">
+          <div className=" flex  ">
+            <div className="flex-1 md:mr-20 ">
+              <h6 className="  font-bold text-gray-600 text-2xl  lg:text-3xl ">
                 Hello ! I’m Abderraouf, a{" "}
                 <span id="e1" className="inline-block">
                   full stack developer
@@ -56,24 +56,24 @@ function AboutMe() {
                   </span>
                 </p>
               </div>
-              <div className="  w-full  h-auto">
+              <div className="  w-full  flex items-center md:gap-4 gap-2 flex-wrap">
                 <a
                 href={cv}
                   download="Khamoum Abderraouf CV"
-                  className=" inline-block px-5 py-3 last:py-3 md:px-8 md:py-3  font-light md:font-normal bg-gray-700 border-2 border-gray-700  text-gray-50 text-xs rounded-md  "
+                  className=" flex items-center justify-center h-12 md:w-40 w-36   font-light md:font-normal bg-gray-700 border-2 border-gray-700  text-gray-50 text-xs rounded-md  "
                 >
                   Download CV
                 </a>
                 <a
                   href="https://github.com/Abderaouf16"
-                  className="  max-768px:mx-4 text-center inline-block my-3 px-5 py-[10px] md:mx-6 md:px-8 md:py-[10px]  font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                  className="flex items-center justify-center h-12  md:w-40 w-36   font-light md:font-normal  text-black border-2 border-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
                 >
                   View Github
                   <Image src={githubIcon} className=" w-5 inline ml-3" alt="" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/abderaouf-khamoum-657527260/"
-                  className="inline-block px-5  md:px-8 py-[10px] font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
+                  className=" flex items-center justify-center h-12  md:w-40 w-36  font-light md:font-normal border-2 border-black text-black text-xs rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500"
                 >
                   View LinkedIn
                   <Image
@@ -87,7 +87,7 @@ function AboutMe() {
             <div className="flex  max-768px:hidden   justify-center mb-16    ">
               <Image
                 src={abdou}
-                className="myImage  lg:w-[280px] lg:h-72  rounded-3xl"
+                className="myImage   lg:w-[280px] lg:h-72  rounded-3xl"
                 alt="Image"
               />
             </div>

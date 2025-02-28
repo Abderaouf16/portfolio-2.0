@@ -18,6 +18,7 @@ import Image from "next/image";
 
 import "@/components/css/home.css";
 import Navbar from "@/components/navigation/navbar";
+import DisplayProjects from "@/components/projects/display-projects";
 
 
 const App = () => {
@@ -73,6 +74,7 @@ const App = () => {
         </Element>
 
         <Element name="Projects">
+          <DisplayProjects/>
         </Element>
 
         <Element name="Education">
