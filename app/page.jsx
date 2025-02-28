@@ -1,10 +1,9 @@
-'use client'
+"use client";
 import { useEffect, useLayoutEffect, useState } from "react";
 import "tailwindcss/tailwind.css";
-import nameLogo from "@/public/assets/nameLogo/nameLogo.svg";
 import { annotate, annotationGroup } from "rough-notation";
 import coryRightIcon from "@/public/assets/icons/copyright.svg";
-import bars from '@/public/assets/icons/bars-solid.svg';
+import bars from "@/public/assets/icons/bars-solid.svg";
 import { Element } from "react-scroll";
 import { Link } from "react-scroll";
 import feather from "feather-icons";
@@ -19,7 +18,6 @@ import Image from "next/image";
 import "@/components/css/home.css";
 import Navbar from "@/components/navigation/navbar";
 import DisplayProjects from "@/components/projects/display-projects";
-
 
 const App = () => {
   useLayoutEffect(() => {
@@ -62,19 +60,17 @@ const App = () => {
     feather.replace();
   }, []);
 
-
   return (
     <>
       <div className="bg-white   px-4 md:px-24 xl:px-56 ">
-       
-        <Navbar/>
+        <Navbar />
 
         <Element name="aboutMe">
           <AboutMe />
         </Element>
 
         <Element name="Projects">
-          <DisplayProjects/>
+          <DisplayProjects />
         </Element>
 
         <Element name="Education">
@@ -87,36 +83,11 @@ const App = () => {
 
         <Attributes />
 
+      </div>
         <Element name="Contact">
           <Contact />
         </Element>
-      </div>
-      <div className="flex footer font-rubik my-8  mx-11 justify-between items-center mt-64">
-        <div className="brand flex items-center font-medium text-black text-sm">
-          <Image
-            className="cursor-pointer flex justify-center items-center  w-10"
-            src={nameLogo}
-            alt=""
-          />
-          <Image src={coryRightIcon} className="w-3 ml-3  mr-2" alt="" />
-          <p>Khamoum Abderraouf 2024</p>
-        </div>
-
-        <div className="socials flex justify-center items-center font-medium text-black text-sm ">
-          <a
-            href=" https://www.linkedin.com/in/abderaouf-khamoum-657527260/"
-            className=" social px-3"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="mailto:abderaoufa88@gmail.com@example.com"
-            className="social"
-          >
-            Mail
-          </a>
-        </div>
-      </div>
+      
     </>
   );
 };

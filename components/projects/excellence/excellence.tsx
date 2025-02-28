@@ -1,27 +1,151 @@
 import Exitbutton from "@/components/navigation/exit-nav-button";
 import Image from "next/image";
 import React from "react";
-import excellenceMac from '@/public/assets/projects-images/Excellence/excellence-mac.png'
+import excellenceMac from "@/public/assets/projects-images/Excellence/excellence-mac2.png";
+import excellenceImac from "@/public/assets/projects-images/Excellence/excellence-Imac.png";
+import excellenceIpad from "@/public/assets/projects-images/Excellence/excellence-ipad.png";
+import mockupBoard from "@/public/assets/projects-images/Excellence/mockup-board.png";
+import excellenceIphone from "@/public/assets/projects-images/Excellence/excellence-iphone.png";
+import excellencePerformance from "@/public/assets/projects-images/Excellence/performance.png";
+
+import Link from "next/link";
+import Contact from "@/components/contact/contact";
 
 export default function Excellence() {
   return (
-    <div className="">
-      <Exitbutton />
-      <div className=" p-14 h-[450px] bg-red-400 flex items-center justify-center">
-        <div className="flex flex-col  items-center gap-14 ">
-          <h1 className="text-4xl lg:text-5xl font-medium text-center">
-            A better way to start your school year
-          </h1>
-          <div className="w-fit py-2 px-4 text-sm rounded-2xl  bg-[#e8e5e4]">
-            <p>Excellence</p>
+    <>
+      <div className=" ">
+        <Exitbutton />
+        <div className=" p-14 h-[450px] flex items-center justify-center">
+          <div className="flex flex-col  items-center gap-14 ">
+            <h1 className="text-4xl lg:text-5xl font-medium text-center">
+              A better way to start your school year
+            </h1>
+            <div className="w-fit py-2 px-4 text-sm rounded-2xl  bg-[#e8e5e4]">
+              <p>Excellence</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className=" p-14  bg-blue-400 flex items-center justify-center">
-        <div className="flex flex-col  items-center gap-14 ">
-          <Image className=" h-3/5 w-" src={excellenceMac} alt="mac"/>
+        <div className=" px-5 lg:px-20 py-14   flex flex-col  ">
+          <div className="     ">
+            <Image
+              className="rounded-xl max-h-[840px]   "
+              src={excellenceMac}
+              alt="mac"
+            />
+          </div>
+          <div className="   py-28 flex flex-col gap-10">
+            <div className=" flex items-center gap-8  ">
+              <div className=" flex-1 ">
+                <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
+                  Client
+                </h4>
+                <p className="md:text-md  text-sm  text-black">
+                  Personnal project
+                </p>
+              </div>
+              <div className=" flex-1 ">
+                <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
+                  Category
+                </h4>
+                <p className="md:text-md  text-sm  text-black">E-commerce</p>
+              </div>
+              <div className=" flex-1 ">
+                <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
+                  Duration
+                </h4>
+                <p className="md:text-md  text-sm  text-black">1 month</p>
+              </div>
+              <div className=" flex-1 ">
+                <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
+                  Demo
+                </h4>
+                <Link href="/" className="md:text-md  text-sm  text-black">
+                  Click here
+                </Link>
+              </div>
+            </div>
+            <div className="  flex">
+              <div className=" flex-1 ">
+                <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
+                  Technologies used
+                </h4>
+                <div className=" flex items-center ">
+                  <p className="md:text-md text-sm py-2 text-[#808080]">
+                    Front-end:
+                  </p>
+                  <p className="md:text-md  text-sm px-2 text-black">
+                    NextJS, TailwindCSS, ShadcnUI, Framer motion, Zustand.
+                  </p>
+                </div>
+                <div className=" flex items-center ">
+                  <p className="md:text-md text-sm   text-[#808080]">
+                    Back-end:
+                  </p>
+                  <p className="md:text-md  text-sm px-2 text-black">
+                    NextJS, DrizzleORM, PostgresSQL, NoenDB.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="  flex flex-col md:flex-row w-full gap-5 ">
+            <div className="  flex-1 ">
+              <Image
+                className="rounded-xl max-h-[400px]   "
+                src={excellenceImac}
+                alt="mac"
+              />
+            </div>
+            <div className="  flex-1">
+              <Image
+                className="rounded-xl max-h-[400px]   "
+                src={excellenceIpad}
+                alt="mac"
+              />
+            </div>
+          </div>
+          <div className="  py-28  lg:w-2/5 ">
+            <h4 className="md:text-md text-sm py-2 text-[#808080]">Overview</h4>
+            <p className="md:text-md  text-sm  text-black">
+              I worked with Aire to develop a brand that firmly positions them
+              as a premium lifestyle brand. The name Aire was inspired by the
+              companies conception in Aire Street Workshops, in addition to
+              aligning well with how the product makes you feel. The wordmark
+              has been designed to convey the feeling of ease and simplicity
+              whilst encapsulating a premium feel. Aire believes in the power of
+              CBD to help people manage the day to day a little better — so I
+              developed a strap-line which embodied that message. A better way
+              to deal with every day.
+            </p>
+          </div>
+          <div className="    w-full h-full overflow-hidden   ">
+            <Image
+              className=" rounded-xl w-full h-full object-cover"
+              src={mockupBoard}
+              alt="mac"
+            />
+          </div>
+          <div className="flex flex-col md:flex-row gap-5 mt-5 w-full">
+            <div className="flex-1 rounded-xl w-full h-full overflow-hidden max-h-[370px]">
+              <Image
+                className="w-full h-full object-cover"
+                src={excellenceIphone}
+                alt="mac"
+              />
+            </div>
+            <div className="flex-1 w-full h-full overflow-hidden max-h-[370px]">
+              <Image
+                className="rounded-xl w-full h-full object-cover"
+                src={excellencePerformance}
+                alt="mac"
+              />
+            </div>
+          </div>
         </div>
+        <Contact />
       </div>
-    </div>
+    </>
   );
 }
