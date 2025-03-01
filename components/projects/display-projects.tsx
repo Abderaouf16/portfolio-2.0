@@ -3,6 +3,7 @@ import React from "react";
 import ExcellnceCoverImage from "@/public/assets/projects-images/Excellence/excellence-mac.png";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function DisplayProjects() {
   const projects = [
@@ -22,14 +23,26 @@ export default function DisplayProjects() {
     <div>
       <section className="py-10 md:py-16">
         <div className=" container max-w-screen-xl mx-auto ">
+          <motion.div className=""
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          >
           <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
             Projects & Experience
           </h1>
           <p className="font-normal text-gray-500 text-xs md:text-base mb-20">
             Some of the side projects I'm currently working on.
           </p>
+          </motion.div>
 
-          <div className="  grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          <motion.div className="  grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6" 
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.7, ease: "easeInOut", delay:0.1 }}
+           viewport={{ once: true }}
+           >
             {projects.map(({ name, coverImage, url }, index) => (
               <div key={index} className="   rounded-md ">
                 <Link href={url} className="group relative block">
@@ -54,7 +67,7 @@ export default function DisplayProjects() {
                 </Link>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>

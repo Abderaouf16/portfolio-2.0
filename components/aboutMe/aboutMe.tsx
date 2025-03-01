@@ -2,12 +2,18 @@ import githubIcon from "@/public/assets/icons/github.svg";
 import linkedinIcon from "@/public/assets/icons/linkedin.svg";
 import abdou from "@/public/assets/images/Abdou.jpg";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function AboutMe() {
   const cv = '/assets/CV/cv.pdf'
   return (
     <>
-      <section id="aboutMe" className=" w-full pt-2 ">
+      <motion.section id="aboutMe" className=" w-full pt-2 " 
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      >
         <div className=" max-w-screen-xl mx-auto   px-4 lg:px-0 my-32  ">
           <div className=" flex  ">
             <div className="flex-1 md:mr-20 ">
@@ -93,7 +99,7 @@ function AboutMe() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

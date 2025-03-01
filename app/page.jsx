@@ -21,7 +21,9 @@ import DisplayProjects from "@/components/projects/display-projects";
 
 const App = () => {
   useLayoutEffect(() => {
-    setTimeout(() => {
+    const delay = 1000; // Set delay in milliseconds (e.g., 1000ms = 1s)
+  
+    const timeout = setTimeout(() => {
       const a1 = annotate(document.querySelector("#e1"), {
         type: "highlight",
         color: "#d0bfdc",
@@ -50,12 +52,13 @@ const App = () => {
         type: "circle",
         color: "#d4c8b9",
       });
-
+  
       const ag = annotationGroup([a1, a2, a3, a4, a5, a6, a7]);
       ag.show();
-    }, 0); // Delay to allow layout to settle
+    }, delay); // Delay in milliseconds
+  
+    return () => clearTimeout(timeout); // Cleanup timeout on unmount
   }, []);
-
   useEffect(() => {
     feather.replace();
   }, []);
