@@ -29,6 +29,7 @@ import nodejs from "@/public/assets/icons/node-js.svg";
 import postgresql from "@/public/assets/icons/postgresql.svg";
 import Image from "next/image";
 
+
 import { motion } from "framer-motion";
 
 function Skills() {
@@ -36,30 +37,28 @@ function Skills() {
     <>
       <section className=" skills font-rubik py-10 md:py-16">
         <div className="container max-w-screen-xl mx-auto px-4">
-          <motion.div
-            className=""
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}
-            viewport={{ once: true }}
+          <motion.div className=""
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          viewport={{ once: true }}
           >
-            <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
-              Technical Skills
-            </h1>
-            <p className="font-normal text-gray-500 text-xs md:text-base mb-20">
-              Technologies I'm currently working with
-            </p>
+          <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+            Technical Skills
+          </h1>
+          <p className="font-normal text-gray-500 text-xs md:text-base mb-20">
+            Technologies I'm currently working with
+          </p>
           </motion.div>
 
-          <div className="container max-w-screen-xl mx-auto px-4">
+          <motion.div className="container max-w-screen-xl mx-auto px-4"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeInOut", delay:0.1 }}
+          viewport={{ once: true }}
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <motion.div
-                className=" px-8 py-10 rounded-md"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
-                viewport={{ once: true }}
-              >
+              <div className=" px-8 py-10 rounded-md">
                 <h4 className="font-medium text-gray-700 text-2xl mb-9 ">
                   Front-End
                 </h4>
@@ -120,15 +119,9 @@ function Skills() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                className=" px-8 py-10 rounded-md"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
-                viewport={{ once: true }}
-              >
+              <div className=" px-8 py-10 rounded-md">
                 <h4 className="font-medium text-gray-700 text-2xl mb-9 ">
                   Back-End
                 </h4>
@@ -161,15 +154,9 @@ function Skills() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
-            <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
-              viewport={{ once: true }}
-            >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               <div className="px-8 py-10 rounded-md mx-auto w-full md:col-span-2">
                 <h4 className="font-medium text-gray-700 text-2xl mb-9 ">
                   Tools
@@ -239,8 +226,8 @@ function Skills() {
                   </div>
                 </div>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </section>
     </>
