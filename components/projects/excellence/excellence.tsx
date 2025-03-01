@@ -1,15 +1,16 @@
+'use client'
 import Exitbutton from "@/components/navigation/exit-nav-button";
 import Image from "next/image";
-import React from "react";
 import excellenceMac from "@/public/assets/projects-images/Excellence/excellence-mac2.png";
 import excellenceImac from "@/public/assets/projects-images/Excellence/excellence-Imac.png";
 import excellenceIpad from "@/public/assets/projects-images/Excellence/excellence-ipad.png";
 import mockupBoard from "@/public/assets/projects-images/Excellence/mockup-board.png";
 import excellenceIphone from "@/public/assets/projects-images/Excellence/excellence-iphone.png";
 import excellencePerformance from "@/public/assets/projects-images/Excellence/performance.png";
-
-import Link from "next/link";
 import Contact from "@/components/contact/contact";
+import AnimationLink from "./animation-link";
+import { motion } from "framer-motion";
+
 
 export default function Excellence() {
   return (
@@ -60,9 +61,7 @@ export default function Excellence() {
                 <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
                   Demo
                 </h4>
-                <Link href="/" className="md:text-md  text-sm  text-black">
-                  Click here
-                </Link>
+               <AnimationLink/>
               </div>
             </div>
             <div className="  flex">
@@ -109,15 +108,11 @@ export default function Excellence() {
           <div className="  py-28  lg:w-2/5 ">
             <h4 className="md:text-md text-sm py-2 text-[#808080]">Overview</h4>
             <p className="md:text-md  text-sm  text-black">
-              I worked with Aire to develop a brand that firmly positions them
-              as a premium lifestyle brand. The name Aire was inspired by the
-              companies conception in Aire Street Workshops, in addition to
-              aligning well with how the product makes you feel. The wordmark
-              has been designed to convey the feeling of ease and simplicity
-              whilst encapsulating a premium feel. Aire believes in the power of
-              CBD to help people manage the day to day a little better — so I
-              developed a strap-line which embodied that message. A better way
-              to deal with every day.
+              Excellence is a full-stack e-commerce website built and designed
+              for selling school products like pens and notebooks. With an
+              easy-to-navigate interface, users can quickly find and purchase
+              their favorite items with just a few clicks, getting ready for the
+              school year!
             </p>
           </div>
           <div className="    w-full h-full overflow-hidden   ">
