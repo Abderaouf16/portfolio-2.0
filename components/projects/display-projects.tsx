@@ -32,7 +32,7 @@ export default function DisplayProjects() {
           <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
             Projects & Experience
           </h1>
-          <p className="font-normal text-gray-500 text-xs md:text-base mb-20">
+          <p className="font-normal text-gray-500 text-sm md:text-base mb-20">
             Some of the side projects I'm currently working on.
           </p>
           </motion.div>

@@ -3,16 +3,56 @@ import linkedinIcon from "@/public/assets/icons/linkedin.svg";
 import abdou from "@/public/assets/images/Abdou.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useLayoutEffect, useState } from "react";
+import { annotate, annotationGroup } from "rough-notation";
+import feather from "feather-icons";
 
 function AboutMe() {
-  const cv = '/assets/CV/cv.pdf'
+  const cv = "/assets/CV/cv.pdf";
+
+  const [animationCompleted, setAnimationCompleted] = useState(false);
+
+  useLayoutEffect(() => {
+    if (animationCompleted) {
+      const delay = 700;
+
+      const timeout = setTimeout(() => {
+        const el1 = document.querySelector("#e1") as HTMLElement | null;
+        const el2 = document.querySelector("#e2") as HTMLElement | null;
+        const el3 = document.querySelector("#e3") as HTMLElement | null;
+        const el4 = document.querySelector("#e4") as HTMLElement | null;
+        const el5 = document.querySelector("#e5") as HTMLElement | null;
+        const el6 = document.querySelector("#e6") as HTMLElement | null;
+        const el7 = document.querySelector("#e7") as HTMLElement | null;
+
+        if (el1 && el2 && el3 && el4 && el5 && el6 && el7) {
+          const a1 = annotate(el1, { type: "highlight", color: "#d0bfdc" });
+          const a2 = annotate(el2, { type: "highlight", color: "#d0bfdc" });
+          const a3 = annotate(el3, { type: "highlight", color: "#c0b762" });
+          const a4 = annotate(el4, { type: "highlight", color: "#d4c8b9" });
+          const a5 = annotate(el5, { type: "highlight", color: "#d0bfdc" });
+          const a6 = annotate(el6, { type: "highlight", color: "#d0bfdc" });
+          const a7 = annotate(el7, { type: "circle", color: "#d4c8b9" });
+
+          const ag = annotationGroup([a1, a2, a3, a4, a5, a6, a7]);
+          ag.show();
+        }
+      }, delay); // Delay in milliseconds
+
+      return () => clearTimeout(timeout); // Cleanup timeout on unmount
+    }
+  }, [animationCompleted]);
+
   return (
     <>
-      <motion.section id="aboutMe" className=" w-full pt-2 " 
-      initial={{ opacity: 0, y: 80 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
-      viewport={{ once: true }}
+      <motion.section
+        id="aboutMe"
+        className=" w-full pt-2 "
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        onAnimationComplete={() => setAnimationCompleted(true)}
       >
         <div className=" max-w-screen-xl mx-auto   px-4 lg:px-0 my-32  ">
           <div className=" flex  ">
@@ -64,7 +104,7 @@ function AboutMe() {
               </div>
               <div className="  w-full  flex items-center md:gap-4 gap-2 flex-wrap">
                 <a
-                href={cv}
+                  href={cv}
                   download="Khamoum Abderraouf CV"
                   className=" flex items-center justify-center h-12 md:w-40 w-36   font-light md:font-normal bg-gray-700 border-2 border-gray-700  text-gray-50 text-xs rounded-md  "
                 >
