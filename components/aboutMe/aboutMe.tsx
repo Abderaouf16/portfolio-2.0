@@ -14,7 +14,7 @@ function AboutMe() {
 
   useLayoutEffect(() => {
     if (animationCompleted) {
-      const delay = 700;
+      const delay = 300;
 
       const timeout = setTimeout(() => {
         const el1 = document.querySelector("#e1") as HTMLElement | null;
