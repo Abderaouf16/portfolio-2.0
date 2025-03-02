@@ -18,7 +18,10 @@ export default function AnimationLink() {
 
   return (
     <div>
-      <Link id="e8" href="/" className="md:text-md py-2 text-sm  text-black">
+      <Link id="e8" href="https://excellence-store.vercel.app" className="md:text-md py-2 text-sm  text-black"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
         Click here
       </Link>
     </div>

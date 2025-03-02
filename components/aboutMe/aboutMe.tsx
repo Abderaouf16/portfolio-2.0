@@ -1,6 +1,6 @@
 import githubIcon from "@/public/assets/icons/github.svg";
 import linkedinIcon from "@/public/assets/icons/linkedin.svg";
-import abdou from "@/public/assets/images/Abdou.jpg";
+import abdou from "@/public/assets/images/abdou3.jpeg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useLayoutEffect, useState } from "react";
@@ -134,10 +134,10 @@ function AboutMe() {
                 </a>
               </div>
             </div>
-            <div className="flex  max-768px:hidden   justify-center mb-16    ">
+            <div className=" myImage flex  max-768px:hidden lg:w-[280px] lg:h-72   justify-center mb-16 w-full h-full overflow-hidden    ">
               <Image
                 src={abdou}
-                className="myImage   lg:w-[280px] lg:h-72  rounded-3xl"
+                className="myImage   w-full h-full object-cover  rounded-3xl"
                 alt="Image"
               />
             </div>
