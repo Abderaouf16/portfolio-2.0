@@ -43,6 +43,10 @@ function AboutMe() {
     }
   }, [animationCompleted]);
 
+  useEffect(() => {
+    feather.replace();
+  }, []);
+
   return (
     <>
       <motion.section
