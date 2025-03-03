@@ -16,8 +16,8 @@ function Attributes() {
               <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
                 Attributes
               </h1>
-              <p className="font-normal text-gray-500 text-xs md:text-base mb-20">
-                MY STRENGTHS
+              <p className="font-normal text-gray-500 text-sm md:text-base mb-20">
+                My strenghts
               </p>
               </div>
   
@@ -32,10 +32,10 @@ function Attributes() {
                     <div className="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
                       <i data-feather="activity"></i>
                     </div>
-                    <h4 className="font-medium text-gray-700 text-lg mb-4">
+                    <h4 className="font-medium text-gray-700 text-base md:text-lg mb-4">
                       Communication
                     </h4>
-                    <p className="font-normal text-gray-500 text-md">
+                    <p className="font-normal text-gray-500 text-sm md:text-base">
                       I communicated technical information to a wide range of
                       stakeholders. I have led and coordinated teams, fostering
                       open communication channels and resolving conflicts to
@@ -46,10 +46,10 @@ function Attributes() {
                     <div className="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
                       <i data-feather="codesandbox"></i>
                     </div>
-                    <h4 className="font-medium text-gray-700 text-lg mb-4">
+                    <h4 className="font-medium text-gray-700 text-base md:text-lg mb-4">
                       Adaptability
                     </h4>
-                    <p className="font-normal text-gray-500 text-md">
+                    <p className="font-normal text-gray-500 text-sm md:text-base">
                       I quickly learned and adapted to new workflows and
                       information systems. As a nurse, I often wear multiple hats
                       while problem solving, and navigating complex situations
@@ -60,10 +60,10 @@ function Attributes() {
                     <div className="w-20 py-6 flex justify-center bg-gray-100 rounded-md mb-4">
                       <i data-feather="users"></i>
                     </div>
-                    <h4 className="font-medium text-gray-700 text-lg mb-4">
+                    <h4 className="font-medium text-gray-700 text-base md:text-lg mb-4">
                       Collaboration
                     </h4>
-                    <p className="font-normal text-gray-500 text-md">
+                    <p className="font-normal text-gray-500 text-sm md:text-base">
                       I worked with cross-functional teams to deliver successful
                       project outcomes. I am a team player who leverages diverse
                       perspectives and skills to work collaboratively with
