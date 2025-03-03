@@ -44,10 +44,10 @@
       padding: 30px;
       border-radius: 15px;
       z-index: 1000;
-      opacity: 0;
+      display: none;
     }
     .navLinks.mobileView {
-      opacity: 1;
+      display: block;
     }
   
     .navLinks a {
