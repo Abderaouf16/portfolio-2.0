@@ -60,28 +60,33 @@ export default function DisplayProjects() {
             viewport={{ once: true }}
           >
             {projects.map(({ name, coverImage, url }, index) => (
-              <div
-                key={index}
-                className="rounded-md w-full h-full overflow-hidden flex flex-col "
-              >
-                <Link href={url} className="group relative block w-full h-full">
-                  <div className="relative w-full h-full">
-                    <Image
-                      className="rounded-2xl transition-all duration-300 ease-in-out w-full h-full object-cover"
-                      src={coverImage}
-                      alt={name}
-                    />
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-black/20 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl flex flex-col justify-between">
-                      <div className="p-5">
-                        <p className="text-white text-md font-medium">{name}</p>
-                      </div>
-                      <div className="absolute top-10 right-10 bg-white flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-lg transition-transform duration-500 group-hover:translate-x-5 group-hover:-translate-y-5">
-                        <ArrowUpRight className="w-5" />
+              <div key={index}>
+                <div className="rounded-md w-full h-full overflow-hidden flex flex-col gap-5 ">
+                  <Link
+                    href={url}
+                    className="group relative block w-full h-full"
+                  >
+                    <div className="relative w-full h-full">
+                      <Image
+                        className="rounded-2xl transition-all duration-300 ease-in-out w-full h-full object-cover"
+                        src={coverImage}
+                        alt={name}
+                      />
+                      {/* Hover Overlay */}
+                      <div className=" hidden md:block absolute inset-0 bg-black/20 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl flex flex-col justify-between">
+                        <div className="p-5">
+                          <p className="text-white text-base font-medium">
+                            {name}
+                          </p>
+                        </div>
+                        <div className="absolute top-10 right-10 bg-white flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-lg transition-transform duration-500 group-hover:translate-x-5 group-hover:-translate-y-5">
+                          <ArrowUpRight className="w-5" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                  <p className=" md:hidden ">{name}</p>
+                </div>
               </div>
             ))}
           </motion.div>
