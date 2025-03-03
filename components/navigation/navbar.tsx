@@ -40,7 +40,10 @@ function Navbar() {
             className={`cursor-pointer rounded-[100px] text-center px-6 py-3 font-medium text-black text-[13px] flex items-center justify-center ${
               activeLink === link.id ? "activeBtn" : ""
             }`}
-            onClick={() => handleSetActive(link.id)}
+            onClick={() => {
+              handleSetActive(link.id);
+              setMobileMenuOpen(false); // Close mobile menu when clicking a link
+            }}
           >
             {link.label}
           </Link>
