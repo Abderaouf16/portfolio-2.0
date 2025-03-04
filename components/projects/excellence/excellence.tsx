@@ -8,7 +8,7 @@ import mockupBoard from "@/public/assets/projects-images/Excellence/mockup-board
 import excellenceIphone from "@/public/assets/projects-images/Excellence/excellence-iphone.png";
 import excellencePerformance from "@/public/assets/projects-images/Excellence/performance.png";
 import Contact from "@/components/contact/contact";
-import AnimationLink from "./animation-link";
+import AnimationLink from "../animation-link";
 import { motion } from "framer-motion";
 
 export default function Excellence() {
@@ -78,7 +78,7 @@ export default function Excellence() {
                 <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
                   Demo
                 </h4>
-                <AnimationLink />
+                <AnimationLink link={'https://excellence-store.vercel.app'} />
               </div>
             </div>
             <div className="  flex">

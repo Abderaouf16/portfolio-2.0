@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx", "components/projects/excellence/excellence.tsx", "components/projects/excellence/animation-link.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx", "components/projects/excellence/excellence.tsx", "components/projects/animation-link.jsx"],
   "exclude": ["node_modules"]
 }
