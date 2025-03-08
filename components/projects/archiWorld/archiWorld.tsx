@@ -25,7 +25,7 @@ export default function ArchiWorld() {
         >
           <div className="flex flex-col  items-center gap-14 ">
             <h1 className="text-4xl lg:text-5xl font-medium text-center">
-              A better way to start your school year
+              Find your next project inspiration
             </h1>
             <motion.div
               initial={{ opacity: 0, y: 80 }}
