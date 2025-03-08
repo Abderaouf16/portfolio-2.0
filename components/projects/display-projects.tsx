@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import ExcellnceCoverImage from "@/public/assets/projects-images/Excellence/excellence-mac.png";
 import ArchiVisionCoverImage from "@/public/assets/images/archivision.png";
-import ArchiWorldCoverImage from "@/public/assets/projects-images/ArchiWorld/archiworld.png";
 import LittleLemonCoverImage from "@/public/assets/images/little lemon.png";
 import GlamourCoverImage from "@/public/assets/projects-images/Glamour/ipad.png";
+import ArchiWorldCoverImage from "@/public/assets/projects-images/ArchiWorld/mac.png";
 
 
 import Link from "next/link";
