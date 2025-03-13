@@ -5,10 +5,7 @@ import archiWorldMac from "@/public/assets/projects-images/ArchiWorld/mac.png";
 import archiWorldImac from "@/public/assets/projects-images/ArchiWorld/iMac2.png";
 import excellenceIpad from "@/public/assets/projects-images/ArchiWorld/iphone.png";
 import mockupBoard from "@/public/assets/projects-images/ArchiWorld/mockup-board.png";
-import excellenceIphone from "@/public/assets/projects-images/Excellence/excellence-iphone.png";
-import excellencePerformance from "@/public/assets/projects-images/Excellence/performance.png";
 import Contact from "@/components/contact/contact";
-import AnimationLink from "../animation-link";
 import { motion } from "framer-motion";
 
 export default function ArchiWorld() {
