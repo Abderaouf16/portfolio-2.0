@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import ExcellnceCoverImage from "@/public/assets/projects-images/Excellence/excellence-mac.png";
 import ArchiVisionCoverImage from "@/public/assets/images/archivision.png";
-import LittleLemonCoverImage from "@/public/assets/images/little lemon.png";
 import GlamourCoverImage from "@/public/assets/projects-images/Glamour/ipad.png";
 import ArchiWorldCoverImage from "@/public/assets/projects-images/ArchiWorld/mac.png";
+import LittelLemonCoverImage from "@/public/assets/projects-images/LittelLemon/coverImage.png";
 
 
 import Link from "next/link";
@@ -35,7 +35,7 @@ export default function DisplayProjects() {
     },
     {
       name: "Little lemon",
-      coverImage: LittleLemonCoverImage,
+      coverImage: LittelLemonCoverImage,
       url: "/projects/LittleLemon",
     },
     

@@ -118,16 +118,16 @@ export default function Glamour() {
             viewport={{ once: true }}
             className="  flex flex-col md:flex-row w-full gap-5 "
           >
-            <div className="  flex-1 ">
+            <div className="  flex-1  rounded-xl max-h-[400px]">
               <Image
-                className="rounded-xl max-h-[400px]   "
+                className="rounded-xl w-full h-full object-cover   "
                 src={signupPage}
                 alt="mac"
               />
             </div>
-            <div className="  flex-1">
+            <div className=" flex-1  rounded-xl max-h-[400px]">
               <Image
-                className="rounded-xl max-h-[400px]   "
+                className="rounded-xl w-full h-full object-cover   "
                 src={glamourMac}
                 alt="mac"
               />
