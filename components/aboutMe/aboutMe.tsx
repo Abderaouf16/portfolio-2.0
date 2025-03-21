@@ -26,12 +26,12 @@ function AboutMe() {
         const el7 = document.querySelector("#e7") as HTMLElement | null;
 
         if (el1 && el2 && el3 && el4 && el5 && el6 && el7) {
-          const a1 = annotate(el1, { type: "highlight", color: "#d0bfdc" });
-          const a2 = annotate(el2, { type: "highlight", color: "#d0bfdc" });
+          const a1 = annotate(el1, { type: "highlight", color: "#93c5fd" });
+          const a2 = annotate(el2, { type: "highlight", color: "#93c5fd" });
           const a3 = annotate(el3, { type: "highlight", color: "#c0b762" });
           const a4 = annotate(el4, { type: "highlight", color: "#d4c8b9" });
-          const a5 = annotate(el5, { type: "highlight", color: "#d0bfdc" });
-          const a6 = annotate(el6, { type: "highlight", color: "#d0bfdc" });
+          const a5 = annotate(el5, { type: "highlight", color: "#93c5fd" });
+          const a6 = annotate(el6, { type: "highlight", color: "#93c5fd" });
           const a7 = annotate(el7, { type: "circle", color: "#d4c8b9" });
 
           const ag = annotationGroup([a1, a2, a3, a4, a5, a6, a7]);
