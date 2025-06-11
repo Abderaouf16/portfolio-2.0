@@ -5,6 +5,7 @@ import ArchiVisionCoverImage from "@/public/assets/projects-images/ArchiVision/c
 import GlamourCoverImage from "@/public/assets/projects-images/Glamour/ipad.png";
 import ArchiWorldCoverImage from "@/public/assets/projects-images/ArchiWorld/mac.png";
 import LittelLemonCoverImage from "@/public/assets/projects-images/LittelLemon/coverImage.png";
+import CuriousCoverImage from "@/public/assets/projects-images/Curious/curiousCover.png";
 
 
 import Link from "next/link";
@@ -13,6 +14,11 @@ import { motion } from "framer-motion";
 
 export default function DisplayProjects() {
   const projects = [
+    {
+      name: "Curious",
+      coverImage: CuriousCoverImage,
+      url: "/projects/Curious",
+    },
     {
       name: "Excellence",
       coverImage: ExcellnceCoverImage,
