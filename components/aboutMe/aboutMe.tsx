@@ -1,6 +1,6 @@
 import githubIcon from "@/public/assets/icons/github.svg";
 import linkedinIcon from "@/public/assets/icons/linkedin.svg";
-import abdou from "@/public/assets/images/abdou3.jpeg";
+import abdou from "@/public/assets/images/555.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useLayoutEffect, useState } from "react";
