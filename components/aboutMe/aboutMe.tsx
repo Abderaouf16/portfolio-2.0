@@ -24,8 +24,10 @@ function AboutMe() {
         const el5 = document.querySelector("#e5") as HTMLElement | null;
         const el6 = document.querySelector("#e6") as HTMLElement | null;
         const el7 = document.querySelector("#e7") as HTMLElement | null;
+        const el8 = document.querySelector("#e8") as HTMLElement | null;
 
-        if (el1 && el2 && el3 && el4 && el5 && el6 && el7) {
+
+        if (el1 && el2 && el3 && el4 && el5 && el6 && el7 && el8) {
           const a1 = annotate(el1, { type: "highlight", color: "#93c5fd" });
           const a2 = annotate(el2, { type: "highlight", color: "#93c5fd" });
           const a3 = annotate(el3, { type: "highlight", color: "#c0b762" });
@@ -33,8 +35,10 @@ function AboutMe() {
           const a5 = annotate(el5, { type: "highlight", color: "#93c5fd" });
           const a6 = annotate(el6, { type: "highlight", color: "#93c5fd" });
           const a7 = annotate(el7, { type: "circle", color: "#d4c8b9" });
+          const a8 = annotate(el8, { type: "highlight", color: "#e0c297"});
 
-          const ag = annotationGroup([a1, a2, a3, a4, a5, a6, a7]);
+
+          const ag = annotationGroup([a8, a1, a2, a3, a4, a5, a6, a7 ]);
           ag.show();
         }
       }, delay); // Delay in milliseconds
@@ -63,6 +67,8 @@ function AboutMe() {
             <div className="flex-1 md:mr-20 ">
               <h6 className="  font-bold text-gray-600 text-2xl  lg:text-3xl ">
                 Hello ! I’m Abderraouf, a{" "}
+                <span id="e8" className="inline-block" >Designer</span>
+                <span > / </span>
                 <span id="e1" className="inline-block">
                   full stack developer
                 </span>{" "}
