@@ -6,7 +6,8 @@ import GlamourCoverImage from "@/public/assets/projects-images/Glamour/ipad.png"
 import ArchiWorldCoverImage from "@/public/assets/projects-images/ArchiWorld/mac.png";
 import LittelLemonCoverImage from "@/public/assets/projects-images/LittelLemon/coverImage.png";
 import CuriousCoverImage from "@/public/assets/projects-images/Curious/curiousCover.png";
-
+import WatchUIDesignVideo from '@/videos/animation apple watch 2_2.mp4'
+import Video from "next-video";
 
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -14,6 +15,25 @@ import { motion } from "framer-motion";
 
 export default function DisplayProjects() {
   const projects = [
+    {
+      name: "Luxeol: Luxury E-commerce Website",
+      coverImage: CuriousCoverImage,
+      url: "/projects/WatchUI",
+    },{
+      name: "Acclimate: House Design",
+      coverImage: CuriousCoverImage,
+      url: "/projects/WatchUI",
+    },
+    {
+      name: "Travel App UI Design",
+      coverImage: CuriousCoverImage,
+      url: "/projects/WatchUI",
+    },
+    {
+      name: "Apple watch Music App ui deisgn",
+      coverVideo : WatchUIDesignVideo,
+      url: "/projects/WatchUI",
+    },
     {
       name: "Curious",
       coverImage: CuriousCoverImage,
@@ -44,15 +64,13 @@ export default function DisplayProjects() {
       coverImage: LittelLemonCoverImage,
       url: "/projects/LittleLemon",
     },
-    
   ];
 
   return (
     <div>
       <section className="py-10 md:py-16">
-        <div className=" container max-w-screen-xl mx-auto ">
+        <div className="container max-w-screen-xl mx-auto">
           <motion.div
-            className=""
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
@@ -73,21 +91,36 @@ export default function DisplayProjects() {
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
             viewport={{ once: true }}
           >
-            {projects.map(({ name, coverImage, url }, index) => (
+            {projects.map(({ name, coverImage, url, coverVideo }, index) => (
               <div key={index}>
-                <div className="rounded-md w-full h-full overflow-hidden flex flex-col gap-5 ">
+                <div className="rounded-md w-full h-full overflow-hidden flex flex-col gap-5">
                   <Link
                     href={url}
-                    className="group relative block w-full h-full"
+                    className="group relative block w-full h-full rounded-2xl overflow-hidden"
                   >
                     <div className="relative w-full h-full">
-                      <Image
-                        className="rounded-2xl transition-all duration-300 ease-in-out w-full h-full object-cover"
-                        src={coverImage}
-                        alt={name}
-                      />
+                      
+                      {/* Fixed: Valid JSX Conditional Expression */}
+                      {coverImage ? (
+                        <Image
+                          className="rounded-2xl transition-all duration-300 ease-in-out w-full h-full object-cover"
+                          src={coverImage}
+                          alt={name}
+                        />
+                      ) : (
+                        <Video 
+                          src={coverVideo} 
+                          loop 
+                          muted 
+                          autoPlay 
+                          playsInline 
+                          // Optional layout fix for video wrapper structure
+                          className="rounded-2xl  w-full h-full -translate-y-12 " 
+                        />
+                      )}
+                      
                       {/* Hover Overlay */}
-                      <div className=" hidden md:block absolute inset-0 bg-black/20 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl flex flex-col justify-between">
+                      <div className="hidden md:block absolute inset-0 bg-black/20 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl flex flex-col justify-between">
                         <div className="p-5">
                           <p className="text-white text-base font-medium">
                             {name}
@@ -99,7 +132,7 @@ export default function DisplayProjects() {
                       </div>
                     </div>
                   </Link>
-                  <p className=" md:hidden ">{name}</p>
+                  <p className="md:hidden">{name}</p>
                 </div>
               </div>
             ))}

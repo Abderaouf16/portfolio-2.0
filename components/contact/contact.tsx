@@ -41,7 +41,7 @@ function Contact() {
             alt=""
           />
           <Image src={coryRightIcon} className="w-3 ml-3  mr-2" alt="" />
-          <p className=" text-md">Khamoum Abderraouf 2025</p>
+          <p className=" text-md">Khamoum Abderraouf 2026</p>
         </div>
 
         <div className="socials flex justify-center items-center font-medium text-black text-sm ">
