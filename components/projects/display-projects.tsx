@@ -7,6 +7,8 @@ import ArchiWorldCoverImage from "@/public/assets/projects-images/ArchiWorld/mac
 import LittelLemonCoverImage from "@/public/assets/projects-images/LittelLemon/coverImage.png";
 import CuriousCoverImage from "@/public/assets/projects-images/Curious/curiousCover.png";
 import WatchUIDesignVideo from '@/videos/animation apple watch 2_2.mp4'
+import TravelGuideAppCoverImage from "@/public/assets/projects-images/TravelGuideApp/TravelGuideApp-CoverImage.png";
+
 import Video from "next-video";
 
 import Link from "next/link";
@@ -25,9 +27,9 @@ export default function DisplayProjects() {
       url: "/projects/WatchUI",
     },
     {
-      name: "Travel App UI Design",
-      coverImage: CuriousCoverImage,
-      url: "/projects/WatchUI",
+      name: "Travel Guide App UI Design",
+      coverImage: TravelGuideAppCoverImage,
+      url: "/projects/TravelGuideApp",
     },
     {
       name: "Apple watch Music App ui deisgn",
