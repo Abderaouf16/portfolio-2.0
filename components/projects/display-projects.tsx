@@ -8,6 +8,7 @@ import LittelLemonCoverImage from "@/public/assets/projects-images/LittelLemon/c
 import CuriousCoverImage from "@/public/assets/projects-images/Curious/curiousCover.png";
 import WatchUIDesignVideo from '@/videos/animation apple watch 2_2.mp4'
 import TravelGuideAppCoverImage from "@/public/assets/projects-images/TravelGuideApp/TravelGuideApp-CoverImage.png";
+import AclimateHouseCoverImage from "@/public/assets/projects-images/AclimateHouse/haul 2.png";
 
 import Video from "next-video";
 
@@ -23,8 +24,8 @@ export default function DisplayProjects() {
       url: "/projects/WatchUI",
     },{
       name: "Acclimate: House Design",
-      coverImage: CuriousCoverImage,
-      url: "/projects/WatchUI",
+      coverImage: AclimateHouseCoverImage,
+      url: "/projects/AclimateHouse",
     },
     {
       name: "Travel Guide App UI Design",

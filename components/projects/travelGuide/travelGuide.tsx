@@ -2,14 +2,11 @@
 import Exitbutton from "@/components/navigation/exit-nav-button";
 import Image from "next/image";
 import Video from "next-video";
-import signinPage from "@/public/assets/projects-images/ArchiVision/signIn.png";
-import signupPage from "@/public/assets/projects-images/ArchiVision/signup.png";
 import coverImage from "@/public/assets/projects-images/TravelGuideApp/TravelGuideApp-CoverImage.png";
 import travelGuideVideo from "@/videos/TravelGuideApp-Video.mp4";
 
 import Contact from "@/components/contact/contact";
 import { motion } from "framer-motion";
-import AnimationLink from "../animation-link";
 
 export default function TravelGuideApp() {
   return (
