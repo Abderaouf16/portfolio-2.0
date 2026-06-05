@@ -9,6 +9,7 @@ import CuriousCoverImage from "@/public/assets/projects-images/Curious/curiousCo
 import WatchUIDesignVideo from '@/videos/animation apple watch 2_2.mp4'
 import TravelGuideAppCoverImage from "@/public/assets/projects-images/TravelGuideApp/TravelGuideApp-CoverImage.png";
 import AclimateHouseCoverImage from "@/public/assets/projects-images/AclimateHouse/haul 2.png";
+import LuxeolCoverImage from "@/public/assets/projects-images/Luxeol/product-image-edit.png";
 
 import Video from "next-video";
 
@@ -20,8 +21,8 @@ export default function DisplayProjects() {
   const projects = [
     {
       name: "Luxeol: Luxury E-commerce Website",
-      coverImage: CuriousCoverImage,
-      url: "/projects/WatchUI",
+      coverImage: LuxeolCoverImage,
+      url: "/projects/Luxeol",
     },{
       name: "Acclimate: House Design",
       coverImage: AclimateHouseCoverImage,

@@ -1,16 +1,17 @@
 "use client";
 import Exitbutton from "@/components/navigation/exit-nav-button";
 import Image from "next/image";
-import Video from 'next-video';
-import signinPage from "@/public/assets/projects-images/ArchiVision/signIn.png";
-import signupPage from "@/public/assets/projects-images/ArchiVision/signup.png";
-import coverImage from "@/public/assets/projects-images/ArchiVision/coverImage.jpg";
+import HeroImage from "@/public/assets/projects-images/Luxeol/hero.png";
+import productPage from "@/public/assets/projects-images/Luxeol/productPage.png";
+import pacPage from "@/public/assets/projects-images/Luxeol/productPacImage.png";
+import checkoutPage from "@/public/assets/projects-images/Luxeol/checkoutPage.png";
+import bagSideBare from "@/public/assets/projects-images/Luxeol/bagSideBare.png";
+import LandingPage from "@/public/assets/projects-images/Luxeol/landingPage.png";
 
 import Contact from "@/components/contact/contact";
 import { motion } from "framer-motion";
-import AnimationLink from "../animation-link";
 
-export default function WatchUI() {
+export default function Excellence() {
   return (
     <>
       <Exitbutton />
@@ -24,7 +25,7 @@ export default function WatchUI() {
         >
           <div className="flex flex-col  items-center gap-14 ">
             <h1 className="text-4xl lg:text-5xl font-medium text-center">
-              Browse, Inspire, Create.
+              Browse, Buy, Glow.
             </h1>
             <motion.div
               initial={{ opacity: 0, y: 80 }}
@@ -33,7 +34,7 @@ export default function WatchUI() {
               viewport={{ once: true }}
               className="w-fit py-2 px-4 text-sm rounded-2xl  bg-[#e8e5e4]"
             >
-              <p>Archi Vision</p>
+              <p>Luxeol</p>
             </motion.div>
           </div>
         </motion.div>
@@ -43,9 +44,9 @@ export default function WatchUI() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
             viewport={{ once: true }}
-            className="     "
+            className="   flex justify-center items-center   "
           >
-            <Image className="rounded-xl   " src={coverImage} alt="mac" />
+            <Image className="rounded-xl    " src={HeroImage} alt="mac" />
           </motion.div>
           <div className="   py-28 flex flex-col gap-10">
             <div className=" flex items-center gap-8  ">
@@ -54,27 +55,27 @@ export default function WatchUI() {
                   Client
                 </h4>
                 <p className="md:text-md  text-sm  text-black">
-                  Personnal project <span className="text-red-400">( Working on new version )</span> 
+                  Personnal project
                 </p>
               </div>
               <div className=" flex-1 ">
                 <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
                   Category
                 </h4>
-                <p className="md:text-md  text-sm  text-black">Landing page + Auth </p>
+                <p className="md:text-md  text-sm  text-black">
+                  Architectural Design
+                </p>
               </div>
               <div className=" flex-1 ">
                 <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
                   Duration
                 </h4>
-                <p className="md:text-md  text-sm  text-black"> 15 days</p>
+                <p className="md:text-md  text-sm  text-black">1/2 month</p>
               </div>
               <div className=" flex-1 ">
                 <h4 className=" md:text-md text-sm py-2 text-[#808080] ">
                   Demo
                 </h4>
-                <AnimationLink link={'https://archivision.vercel.app/Home'} />
-
               </div>
             </div>
             <div className="  flex">
@@ -84,20 +85,10 @@ export default function WatchUI() {
                 </h4>
                 <div className=" flex items-center ">
                   <p className="md:text-md text-sm py-2 text-[#808080]">
-                    Front-end:
+                    Design Tools
                   </p>
-                  <p className="md:text-md  text-sm px-2 text-black">
-                    HTML, CSS, JavaScript, Nextjs.
-                  </p>
+                  <p className="md:text-md  text-sm px-2 text-black">Figma.</p>
                 </div>
-                {/* <div className=" flex items-center ">
-                  <p className="md:text-md text-sm   text-[#808080]">
-                    Back-end:
-                  </p>
-                  <p className="md:text-md  text-sm px-2 text-black">
-                    Nodejs, Express, MongoDB.
-                  </p>
-                </div> */}
               </div>
             </div>
           </div>
@@ -109,17 +100,17 @@ export default function WatchUI() {
             viewport={{ once: true }}
             className="  flex flex-col md:flex-row w-full gap-5 "
           >
-            <div className="  flex-1  rounded-xl max-h-[400px]">
+            <div className=" flex-1  rounded-xl max-h-[600px] ">
               <Image
-                className="rounded-xl w-full h-full object-cover   "
-                src={signinPage}
+                className="rounded-xl w-full h-full object-cover    "
+                src={productPage}
                 alt="mac"
               />
             </div>
-            <div className="  flex-1  rounded-xl max-h-[400px]">
+            <div className=" flex-1  rounded-xl max-h-[600px]">
               <Image
                 className="rounded-xl w-full h-full object-cover    "
-                src={signupPage}
+                src={pacPage}
                 alt="mac"
               />
             </div>
@@ -127,14 +118,15 @@ export default function WatchUI() {
           <div className="  py-28  lg:w-2/5 ">
             <h4 className="md:text-md text-sm py-2 text-[#808080]">Overview</h4>
             <p className="md:text-md  text-sm  text-black">
-              Archi Vision is an online platform that presents creative and
-              innovative architectural projects. It helps you explore
-              captivating architectural ideas and ignite your passion for
-              architectural excellence. Archi World offers the user a seamless
-              journey, starting from account creation. I successfully
-              implemented a smooth authentication process, ensuring easy access
-              to users through various actions.
+              Luxeol is a brand name specialized in skincare products. As a web
+              designer I was assigned to design the e-commerce website including
+              all pages the user may need in the process of exploring and buying
+              products.
               
+               My design logic for this one was: Clean, Easy to
+              navigate, Effective. I chosed to do a minimalist design over a
+              complicated one so the buy rate increases as the navigators feels
+              no anxious and overwhelming during the process.
             </p>
           </div>
           <motion.div
@@ -144,7 +136,30 @@ export default function WatchUI() {
             viewport={{ once: true }}
             className=""
           >
-            
+            <div className="flex flex-col md:flex-row gap-5 mt-5 w-full justify-center items-center">
+              <div className="flex-1 rounded-xl w-full h-full overflow-hidden max-h-[600px]">
+                <Image
+                  className="w-full h-full object-cover"
+                  src={checkoutPage}
+                  alt="mac"
+                />
+              </div>
+              <div className="flex-1 w-full h-full overflow-hidden max-h-[600px]">
+                <Image
+                  className="rounded-xl w-full h-full object-cover"
+                  src={bagSideBare}
+                  alt="mac"
+                />
+              </div>
+            </div>
+
+            <div className="  py-5   w-full h-full overflow-hidden   ">
+              <Image
+                className=" rounded-xl w-full h-full object-cover"
+                src={LandingPage}
+                alt="mac"
+              />
+            </div>
           </motion.div>
         </div>
         <Contact />
